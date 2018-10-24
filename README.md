@@ -16,8 +16,10 @@ The source code for your application is in the /src directory. A /www directory 
 1. To check the web site builds, run the command *yarn run build* (or *npm run build*).
 1. You can verify that Webpack has generated a website in the /www directory.
 1. To run the solution as a web application, run the command *yarn start* (or *npm start*).
+1. Make a change to a source file, for example /src/components/hello.tsx and notice that the browser page updates.
 1. Install the cordova browser platform (*cordova platform add browser*).
 1. Verify that Cordova is working by running the command *cordova run browser*.
+1. Note that the page in the browser is almost the same as before but there is no live update in this case.
 1. Run the commands to add the platforms you want to support (e.g. *cordova platform add android*).
 1. If you want to run on a device, make sure it is connected, otherwise you will get an emulator.
 1. Build and run the platform (e.g. *cordova run android*).
@@ -43,6 +45,6 @@ When you are ready to test the application as a Cordova app, you can initially u
 
 Remember to do a Webpack build as well as a Cordova build when you make changes. You might want to add another command to your package.json file to make this easier, depending on what you are trying to do.
 
-#Deploying
+# Distributing
 
 When you want to deploy tha application you will want to do a production build with webpack (*yarn webpack build --production*). You will notice that this produces a much more compact (minified) set of files in the /www directory which will be better for code distribution, as well as giving a slightly higher barrier to anyone who is interested in reverse-engineering your code. Then you will use production settings, for example *cordova build android --release *. See the Cordova [documentation](https://cordova.apache.org/docs/) for more details on arguments to the build command. The resulting package file (e.g. .apk file for Android) can be submitted to the appropriate app store.
