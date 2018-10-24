@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.example.tutorial" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>Hello World</name>
+    <description>
+        Starter Apache Cordova application with TypeScript and React.
+    </description>
+    <author email="info@flosim.com" href="https://www.flosim.com/">Flow Simulation Ltd</author>
+    <content src="index.html" />
+    <plugin name="cordova-plugin-whitelist" spec="1" />
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <platform name="android">
+        <allow-intent href="market:*" />
+        <splash density="land-ldpi" src="res/screens/android/screen-ldpi-landscape.png" />
+        <splash density="port-ldpi" src="res/screens/android/screen-ldpi-portrait.png" />
+    </platform>
+    <platform name="ios">
+        <allow-intent href="itms:*" />
+        <allow-intent href="itms-apps:*" />
+        <splash height="480" src="images/screen-portrait.png" width="320" />
+        <splash src="images/screen-portrait.png" />
+    </platform>
+    <platform name="windows">
+        <splash height="300" src="res/screens/windows/SplashScreenLandscape.jpg" width="620" />
+    </platform>
+    <engine name="browser" spec="^5.0.4" />
+    <engine name="android" spec="^7.1.1" />
+</widget>
